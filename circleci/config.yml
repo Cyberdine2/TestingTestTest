@@ -9,6 +9,8 @@ jobs:
       - run: |
           echo '#!/bin/sh' > run.sh
           echo 'echo Hello world!' >> run.sh
-          chmod +x run.sh
+          chmod +x run.s
+          -checkout
       - run: npm install
       - run: npm test
+  
